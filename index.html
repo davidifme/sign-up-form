@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
     <title>Project: Sign-up Form</title>
 </head>
 <body>
@@ -34,15 +35,36 @@
         </div>
 
         <form action="#" method="post">
+            <h2>Let's do this!</h2>
 
+            <div class="form-content">
+                <div>
+                    <label for="first-name">first name</label>
+                    <input type="text" name="user_first_name" id="first-name">
+                    <label for="last-name">last name</label>
+                    <input type="text" name="user_last_name" id="last-name">
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" name="user_email" id="email">
+                    <label for="phone-number">phone number</label>
+                    <input type="tel" name="user_phone_number" id="phone-number">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" name="user_password" id="password" required>
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" name="user_confirmed_password" id="confirm-password" required>
+                </div>
+            </div>
+
+            <div class="bottom-container">
+                <button type="submit">Create Account</button>
+                <p>
+                    Already have an account? <a href="#" class="log-in-link">Log in</a>
+                </p>
+            </div>
         </form>
-
-        <div class="bottom-container">
-            <button type="submit">Create Account</button>
-            <p>
-                Already have an account? <a href="#" class="log-in-link">Log in</a>
-            </p>
-        </div>
     </main>
 </body>
 </html>
