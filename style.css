@@ -68,3 +68,34 @@ a {
     margin-top: auto;
     margin-bottom: 0.5rem;
 }
+
+main {
+    --padding: 2rem;
+}
+
+.disclaimer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 33vh;
+    width: 60ch;
+    padding: var(--padding);
+    font-weight: 550;
+}
+
+.disclaimer-container p:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+form {
+    padding: var(--padding);
+}
+
+form h2 {
+    margin-bottom: 1rem;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
