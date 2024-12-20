@@ -71,14 +71,15 @@ a {
 
 main {
     --padding: 2rem;
+    max-height: var(--height);
 }
 
 .disclaimer-container {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 33vh;
     width: 60ch;
+    height: 25vh;
     padding: var(--padding);
     font-weight: 550;
 }
@@ -88,7 +89,7 @@ main {
 }
 
 form {
-    padding: var(--padding);
+    width: 65vw;
 }
 
 form h2 {
@@ -98,4 +99,59 @@ form h2 {
 .form-content {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+    padding: var(--padding);
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.first-last-name-container,
+.email-phone-number-container,
+.password-passconfirm-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.first-last-name-container div,
+.email-phone-number-container div,
+.password-passconfirm-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-variant: small-caps;
+}
+
+input {
+    width: 14rem;
+}
+
+.bottom-container {
+    padding: var(--padding);
+    margin-top: 1rem;
+}
+
+.bottom-container button {
+    margin-bottom: 0.5rem;
+}
+
+.bottom-container a {
+    color: #596D48;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 11px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
